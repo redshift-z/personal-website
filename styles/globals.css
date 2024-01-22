@@ -39,18 +39,30 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 5rem;
+}
+
+.intro-pic {
+  border-radius: 50%;
+  margin-top: 2rem;
 }
 
 .title {
-  font-size: 8em;
+  font-size: 8rem;
   font-weight: bolder;
   font-family: 'Poppins', 'sans-serif';
   color: #134074;
-  padding-bottom: 0.25em;
+  padding-bottom: 1rem;
 }
 
 .description {
   font-family: 'Poppins', 'sans-serif';
   color: #0B2545;
   text-align: justify;
+  padding-bottom: 2rem;
+}
+
+.intro-icon {
+  font-size: 2rem;
+  color: #134074;
 }
