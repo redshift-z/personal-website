@@ -22,14 +22,15 @@ export default function Home() {
         <div>
           <Header title="hey!"/>
           <p className="description">
-            I'm Razita Nuriyan, but please do call me Zita!! Currently, I'm a Jakarta-based final year Computer Science student at the 
-            University of Indonesia, having just recently came back from a semester at the Newcastle University under the IISMA
-            (Indonesian International Student Mobility Awards) 2023 scheme. During my study, I've had the chance to explore a broad
-            range of subjects related to computing, but my experiences focused on Web Development, Computational Statistics, and High
-            Performance Computing. I'm currently doing research on a high-performance molecular dynamics simulator, as I've always 
-            been passionate about science for as long as I can remember (I've represented Indonesia in an international astrophysics
-            competition in high school and went on to teach astrophysics for 3 years, helping 20++ students win medals at national
-            and international levels). I can probably still name the stars at the night sky if we go stargazing 🔭.
+            I'm <b>Razita Nuriyan</b>, but please do call me <b>Zita</b>!! Currently, I'm a Jakarta-based final year <b>Computer 
+            Science </b> student at the University of Indonesia, having just recently came back from a semester at the Newcastle 
+            University under the IISMA (Indonesian International Student Mobility Awards) 2023 scheme. During my study, I've had 
+            the chance to explore a broad range of subjects related to computing, but my experiences focused on <b>Web Development</b>, 
+            <b> Computational Statistics</b>, and <b>High Performance Computing</b>. I'm currently doing research on a high-performance 
+            molecular dynamics simulator, as I've always been passionate about science for as long as I can remember (I've 
+            represented Indonesia in an international astrophysics competition in high school and went on to teach <b>astrophysics </b> 
+            for 3 years, helping 20++ students win medals at national and international levels). I can probably still name the stars 
+            at the night sky if we go stargazing 🔭.
           </p>
           <div className='grid grid-cols-5 gap-20'>
             <a href='https://www.linkedin.com/in/razita-afrina-nuriyan/' target="_blank" rel="noopener noreferrer">

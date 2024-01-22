@@ -33,8 +33,11 @@ code {
   font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
 }
 
+b {
+  color: #134074;
+}
+
 .container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,4 +68,8 @@ code {
 .intro-icon {
   font-size: 2rem;
   color: #134074;
+}
+
+.experience-header {
+  font-size: 4rem !important;
 }
