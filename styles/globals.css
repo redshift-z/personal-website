@@ -10,6 +10,9 @@ body {
     Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+html {
+  background-color: #EEF4ED;
+}
 * {
   box-sizing: border-box;
 }
@@ -36,4 +39,18 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.title {
+  font-size: 8em;
+  font-weight: bolder;
+  font-family: 'Poppins', 'sans-serif';
+  color: #134074;
+  padding-bottom: 0.25em;
+}
+
+.description {
+  font-family: 'Poppins', 'sans-serif';
+  color: #0B2545;
+  text-align: justify;
 }
