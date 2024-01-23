@@ -86,7 +86,7 @@ export default function Home() {
       ]
     },
     {
-      category: "Astronomy/Astrophysics",
+      category: "Astronomy",
       contents: [
         {
           company: "Freelance",
@@ -170,6 +170,7 @@ export default function Home() {
         },
         {
           title: "Thriftin",
+          url: "https://thriftin.netlify.com",
           details: [
             "Designed a questionnaire website for a personal stylist/shopper to help identify their client’s needs and preferences.",
             "Implements the website design on the specified tech stack.",
@@ -186,6 +187,7 @@ export default function Home() {
       contents: [
         {
           title: "Onion Routing Simulator",
+          url: "https://drive.google.com/file/d/1lu9BQ29jBisCBwH9w_ldPOp6om2Cgp1z/view?usp=sharing",
           details: [
             "Developed a log-based simulator to help visualize the process of sending web requests and responses through an onion routing scheme."
           ],
@@ -193,6 +195,7 @@ export default function Home() {
         },
         {
           title: "KapalTech Vessel Maintenance System",
+          url: "https://vessel.kapal.tech",
           details: [
             "Contributed in the development of a website to monitor ship/vessel health and manage their maintenance processes.",
             "Created a dashboard to display lists of vessels owned by a company and the health status of all their components.",
@@ -249,7 +252,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='grid grid-cols-2 gap-10'>
+      <main className='intro-container lg:grid lg:grid-cols-2 lg:gap-10'>
         <Image
           src="/me.jpg"
           width={580}
@@ -270,7 +273,7 @@ export default function Home() {
             for 3 years, helping 20++ students win medals at national and international levels). I can probably still name the stars 
             at the night sky if we go stargazing 🔭.
           </p>
-          <div className='grid grid-cols-5 gap-20'>
+          <div className='flex justify-between icons-container'>
             <a href='https://www.linkedin.com/in/razita-afrina-nuriyan/' target="_blank" rel="noopener noreferrer">
               <BsLinkedin className='intro-icon' />
             </a>
@@ -289,15 +292,17 @@ export default function Home() {
           </div>
         </div>
         <div className='col-span-2'>
-          <div className='grid grid-cols-4'>
-            <h1 className='experience-title col-span-3'>curious about what I do?</h1>
+          <div className='container grid grid-cols-4'>
+            <h1 className='experiences-title col-span-3'>curious about what I do?</h1>
             <div>
-              <button className='btn-primary'>Download CV</button>
+              <a href="https://drive.google.com/file/d/1dYtdOyuPCsKXmimWfAfHjcyspoqs2rS9/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <button className='btn-primary'>Download CV</button>
+              </a>
               <p className="btn-other-action">or scroll below</p>
             </div>
           </div>
           <div className='experience-container'>
-            <div className='grid grid-cols-4 gap-20 experience-toggle-container'>
+            <div className='grid grid-cols-1 gaps-y-4 sm:flex sm:justify-between experience-toggle-container'>
               <button className={experienceDisplay.educationButton} onClick={() => setExperienceDisplay({display: education, 
                                           educationButton: "experience-toggle-on", experienceButton: "experience-toggle-off", 
                                           projectButton: "experience-toggle-off",skillButton: "experience-toggle-off"})}>Education</button>

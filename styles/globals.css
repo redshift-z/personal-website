@@ -37,12 +37,110 @@ b {
   color: #134074;
 }
 
+@media screen and (max-width: 1023px) {
+  .container, .description, .intro-pic {
+    max-width: 80vw;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .experience-toggle-off {
+    height: fit-content;
+    width: 100% !important;
+    padding: 0.5rem 0;
+    border-radius: 1rem;
+  }
+  
+  .experience-toggle-on {
+    height: fit-content;
+    width: 100% !important;
+    padding: 0.5rem 0;
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .container, .description {
+    max-width: 100vw;
+    padding-left: 15vw;
+    padding-right: -10vw;
+  }
+
+  .intro-container {
+    text-align: center;
+  }
+
+  .icons-container {
+    max-width: 90vw;
+    margin-left: 18vw;
+    padding-left: 8vw;
+  }
+
+  .intro-pic {
+    margin-left: 15vw;
+  }
+
+  .experiences-title, .btn-primary, .btn-other-action {
+    margin-left: 10vw;
+    
+  }
+
+  .title {
+    margin: 0 20vw;
+    padding-left: 8vw;
+    text-align: center;
+    max-width: 80vw;
+  }
+
+  .experience-container {
+    margin-left: 10vw;
+  }
+
+  .experience-toggle-container {
+    padding: 0 0;
+    align-items: center;
+  }
+
+  .experience-time {
+    text-align: center !important;
+    margin-top: 1.2rem !important;
+  }
+
+  .experience-title, .experience-subtitle, .experience-subheader {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .experience-tech-card {
+    min-width: fit-content !important;
+  }
+
+  .education-detail-name {
+    text-align: center !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .education-tech-card {
+    margin-right: 0 !important;
+    margin-left: 2.2rem !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .title {
+    font-size: 7rem !important;
+  }
+}
+
 .container {
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 5rem;
+  margin: auto;
+  padding: 0 3rem;
 }
 
 .intro-pic {
@@ -56,6 +154,7 @@ b {
   font-family: 'Poppins', 'sans-serif';
   color: #134074;
   padding-bottom: 1rem;
+  text-align: center;
 }
 
 .description {
@@ -63,6 +162,7 @@ b {
   color: #0B2545;
   text-align: justify;
   padding-bottom: 2rem;
+  margin: 0 auto;
 }
 
 .intro-icon {
@@ -70,12 +170,16 @@ b {
   color: #134074;
 }
 
-.experience-title {
+.experiences-title, .experience-title {
   margin-top: 2.5rem;
   font-family: 'Poppins', 'sans-serif';
   color: #134074;
   font-weight: bolder;
   font-size: 4rem;
+}
+
+.experiences-title {
+  text-align: center;
 }
 
 .btn-primary {
@@ -101,6 +205,7 @@ b {
 }
 
 .experience-container {
+  max-width: 100vw;
   background-color: #134074;
   border-radius: 2rem;
   margin-top: 2rem;
@@ -198,6 +303,11 @@ b {
   margin-left: 2rem;
 }
 
+.education-toggle-list {
+  color: #EEF4ED;
+  font-family: 'Poppins', 'sans-serif';
+}
+
 .experience-tech-container {
   margin-left: 2em;
   margin-top: 2em;
@@ -216,6 +326,12 @@ b {
   color: #134074;
   text-align: center;
   margin-right: 2.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.experience-tech-icon {
+  margin-right: 1rem;
 }
 
 .experience-tech-name {
@@ -236,4 +352,12 @@ b {
 .skill-container {
   margin-left: 2rem;
   margin-top: 2rem;
+}
+
+.experience-bullet-list {
+  margin-top: 1rem;
+}
+
+.project-title {
+  text-decoration-line: underline;
 }
