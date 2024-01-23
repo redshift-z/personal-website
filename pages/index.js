@@ -32,7 +32,7 @@ export default function Home() {
         {title: 'Introductory Astrophysics', tech: []},
         {title: 'Computational Probability and Statistics with R', tech: [{tech: 'R', img: 'logos/r.svg'}]},
         {title: 'Problem Solving with Python', tech: [{tech: 'Python', img: 'logos/python.svg'}]},
-        {title: 'Interconnected World: Foundations of Human and Development Geographies', tech: []},
+        {title: 'Interconnected World: Foundations of Human & Development Geographies', tech: []},
         {title: 'Order and Disorder: The Shaping of the 21st Century', tech: []}
       ]
     }
@@ -52,7 +52,9 @@ export default function Home() {
             "Graded and gave feedbacks on assignments related to advanced programming concepts."
           ],
           tech: [
-            {tech: 'JavaScript'}, {tech: 'Java'}, {tech: 'Spring Boot'}, {tech: 'GCP'}, {tech: 'Next.js'}
+            {tech: 'JavaScript', img: 'logos/javascript.svg'}, {tech: 'Java', img: 'logos/java.svg'}, 
+            {tech: 'Spring Boot', img: 'logos/springboot.svg'}, {tech: 'GCP', img: 'logos/gcp.svg'}, 
+            {tech: 'Next.js', img: 'logos/next.svg'}
           ]
         },
         {
@@ -67,7 +69,9 @@ export default function Home() {
             "Developed an astronomical event calendar that allows users to get reminders through Google Calendar's API."
           ],
           tech: [
-            {tech: 'JavaScript'}, {tech: 'React.js'}, {tech: 'Gatsby'}, {tech: 'Strapi'}, {tech: 'Firebase'}, {tech: 'GraphQL'}
+            {tech: 'JavaScript', img: 'logos/javascript.svg'}, {tech: 'React.js', img: 'logos/react.svg'}, 
+            {tech: 'Gatsby', img: 'logos/gatsby.svg'}, {tech: 'Strapi', img: 'logos/strapi.svg'}, 
+            {tech: 'Firebase', img: 'logos/firebase.svg'}, {tech: 'GraphQL', img: 'logos/graphql.svg'}
           ]
         },
         {
@@ -143,7 +147,8 @@ export default function Home() {
             "Created promotional contents for their events.",
             "Created design systems for their Instagram content."
           ],
-          tech: [{tech: 'Figma'}, {tech: 'Canva'}, {tech: 'Adobe Photoshop'}]
+          tech: [{tech: 'Figma', img: 'logos/figma.svg'}, {tech: 'Canva', img: 'logos/canva.svg'}, 
+                 {tech: 'Photoshop', img: 'logos/photoshop.svg'}]
         }
       ]
     }
@@ -156,11 +161,12 @@ export default function Home() {
         {
           title: "Undergraduate Final Project",
           details: [
-            "Identifies value redundancies due to the usage of Kokkos functions on the most recent release of LAMMPS (Large-Scale Atomic/Molecular Massively Parallel Simulator using GVProf, a state-of-art GPU profiler.",
+            "Identifies value redundancies due to the usage of Kokkos functions on the most recent release of LAMMPS (Large-Scale Atomic/Molecular Massively Parallel Simulator) using GVProf, a state-of-art GPU profiler.",
             "Develops solutions for the identified value redundancies.",
             "Analyzes the effects of the identified value redundancy on the performance of LAMMPS on an NVIDIA GPU cluster."
           ],
-          tech: [{name: 'C++'}, {tech: 'CUDA'}, {tech: 'Kokkos'}, {tech: 'LAMMPS'}]
+          tech: [{tech: 'C++', img: 'logos/cpp.svg'}, {tech: 'CUDA', img: 'logos/cuda.svg'}, 
+                 {tech: 'Kokkos', img: 'logos/kokkos.png'}, {tech: 'LAMMPS', img: 'logos/lammps.svg'}]
         },
         {
           title: "Thriftin",
@@ -169,7 +175,9 @@ export default function Home() {
             "Implements the website design on the specified tech stack.",
             "Integrates payment service to the website"
           ],
-          tech: [{tech: 'TypeScript'}, {tech: 'Next.js'}, {tech: 'Netlify'}, {tech: 'Tailwind CSS'}, {tech: 'Contentful'}]
+          tech: [{tech: 'TypeScript', img: 'logos/typescript.svg'}, {tech: 'Next.js', img: 'logos/next.svg'}, 
+          {tech: 'Netlify', img: '/logo-netlify.svg'}, {tech: 'Tailwind CSS', img: 'logos/tailwindcss.svg'}, 
+          {tech: 'Contentful', img: 'logos/contentful.svg'}]
         }
       ]
     },
@@ -181,7 +189,7 @@ export default function Home() {
           details: [
             "Developed a log-based simulator to help visualize the process of sending web requests and responses through an onion routing scheme."
           ],
-          tech: [{tech: 'Python'}]
+          tech: [{tech: 'Python', img: 'logos/python.svg'}]
         },
         {
           title: "KapalTech Vessel Maintenance System",
@@ -193,7 +201,9 @@ export default function Home() {
             "Actively participated in code review processes along with the other team members, reviewing at least one person's work in a week.",
             "Implemented the Scrum framework and became the team's Scrum master for a development sprint."
           ],
-          tech: [{tech: 'Python'}, {tech: 'Django'}, {tech: 'JavaScript'}, {tech: 'React.js'}, {tech: 'Jest'}, {tech: 'SonarQube'}]
+          tech: [{tech: 'Python', img: 'logos/python.svg'}, {tech: 'Django', img: 'logos/django.svg'}, 
+                 {tech: 'JavaScript', img: 'logos/javascript.svg'}, {tech: 'React.js', img: 'logos/react.svg'}, 
+                 {tech: 'Jest', img: 'logos/jest.svg'}, {tech: 'SonarQube', img: 'logos/sonarqube.svg'}]
         }
       ]
     }

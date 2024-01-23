@@ -134,15 +134,26 @@ b {
   padding: 0.5rem 0;
 }
 
+.experience-category {
+  margin-top: 2rem;
+  background-color: #EEF4ED;
+  color: #134074;
+  margin-left: 0.5rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+}
+
 .experience-title, .experience-subheader {
   color: #EEF4ED;
   font-family: 'Poppins', 'sans-serif';
   font-weight: bold;
+  margin-left: 2rem;
 }
 
-.experience-title {
+.experience-title, .experience-category {
   font-size: 1.5rem;
-  margin-left: 2rem;
+  font-family: 'Poppins', 'sans-serif';
 }
 
 .experience-time, .experience-subtitle {
@@ -165,7 +176,6 @@ b {
 
 .experience-subheader {
   color: #EEF4ED;
-  margin-left: 2rem;
   font-size: 1.2rem;
 }
 
@@ -188,6 +198,11 @@ b {
   margin-left: 2rem;
 }
 
+.experience-tech-container {
+  margin-left: 2em;
+  margin-top: 2em;
+}
+
 .experience-tech {
   text-align: right;
   margin-right: 2em;
@@ -196,7 +211,6 @@ b {
 .experience-tech-card {
   background-color: #EEF4ED;
   border-radius: 1rem;
-  width: fit-content;
   height: 2.5rem;
   padding: 0.5rem 1rem;
   color: #134074;
@@ -214,5 +228,8 @@ b {
 }
 
 .experience-detail-name {
-  margin-top: 0.7rem;
+  margin: 0.7rem 2rem 0;
+  color: #EEF4ED;
+  font-family: 'Poppins', 'sans-serif';
+  text-align: justify;
 }
