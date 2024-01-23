@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
-import Header from '@components/Header'
 import { BsLinkedin, BsGithub, BsInstagram, BsMedium, BsEnvelopeAt} from "react-icons/bs";
 import { FaChevronUp } from "react-icons/fa";
-
+import Header from '@components/Header'
 import Display from '@components/Display';
+import Footer from '@components/Footer';
+
 export default function Home() {
   const education = { type: "education", contents: [
     {
@@ -257,8 +258,8 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>hey!</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Razita Nuriyan's Page</title>
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main className='intro-container lg:grid lg:grid-cols-2 lg:gap-10'>
@@ -334,6 +335,7 @@ export default function Home() {
       <button className={"btn-scroll-top"} onClick={scrollToTop}>
             <FaChevronUp />
       </button>
+      <Footer />
     </div>
   )
 }
