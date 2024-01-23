@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Header from '@components/Header'
-import Footer from '@components/Footer'
 import { BsLinkedin, BsGithub, BsInstagram, BsMedium, BsEnvelopeAt} from "react-icons/bs";
 export default function Home() {
   return (
@@ -48,6 +47,23 @@ export default function Home() {
             <a href='mailto:razita.afrina@gmail.com' target="_blank" rel="noopener noreferrer">
               <BsEnvelopeAt className='intro-icon'/>
             </a>
+          </div>
+        </div>
+        <div className='col-span-2'>
+          <div className='grid grid-cols-4'>
+            <h1 className='experience-title col-span-3'>curious about what I do?</h1>
+            <div>
+              <button className='btn-primary'>Download CV</button>
+              <p className="btn-other-action">or scroll below</p>
+            </div>
+          </div>
+          <div className='experience-container'>
+            <div className='grid grid-cols-4 gap-20 experience-toggle-container'>
+              <button className='experience-toggle-off'>Education</button>
+              <button className='experience-toggle-off'>Experiences</button>
+              <button className='experience-toggle-off'>Projects</button>
+              <button className='experience-toggle-off'>Skills</button>
+            </div>
           </div>
         </div>
       </main>

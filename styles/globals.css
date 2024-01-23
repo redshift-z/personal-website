@@ -70,6 +70,54 @@ b {
   color: #134074;
 }
 
-.experience-header {
-  font-size: 4rem !important;
+.experience-title {
+  margin-top: 2rem;
+  font-family: 'Poppins', 'sans-serif';
+  color: #134074;
+  font-weight: bolder;
+  font-size: 4rem;
+}
+
+.btn-primary {
+  margin-top: 2rem;
+  background-color: #134074;
+  color: #EEF4ED;
+  border-radius: 2rem;
+  font-family: 'Poppins', 'sans-serif';
+  font-size: 2rem;
+  font-weight: bold;
+  width: 20rem;
+  height: fit-content;
+  padding: 1.25rem 0;
+}
+
+.btn-other-action {
+  font-family: 'Poppins', 'sans-serif';
+  color: #134074;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.experience-container {
+  background-color: #134074;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.experience-toggle-container {
+  background-color: #0B2545;
+  border-radius: 2rem;
+}
+
+.experience-toggle-off {
+  color: #EEF4ED;
+  font-family: 'Poppins', 'sans-serif';
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 15.5rem;
+  height: fit-content;
+  padding: 0.5rem 0;
 }
