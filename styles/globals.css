@@ -71,7 +71,7 @@ b {
 }
 
 .experience-title {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   font-family: 'Poppins', 'sans-serif';
   color: #134074;
   font-weight: bolder;
@@ -104,7 +104,7 @@ b {
   background-color: #134074;
   border-radius: 2rem;
   margin-top: 2rem;
-  padding: 1rem;
+  padding: 3rem 2rem;
 }
 
 .experience-toggle-container {
@@ -120,4 +120,99 @@ b {
   width: 15.5rem;
   height: fit-content;
   padding: 0.5rem 0;
+}
+
+.experience-toggle-on {
+  background-color: #EEF4ED;
+  color: #134074;
+  font-family: 'Poppins', 'sans-serif';
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 2rem;
+  width: 15.5rem;
+  height: fit-content;
+  padding: 0.5rem 0;
+}
+
+.experience-title, .experience-subheader {
+  color: #EEF4ED;
+  font-family: 'Poppins', 'sans-serif';
+  font-weight: bold;
+}
+
+.experience-title {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+.experience-time, .experience-subtitle {
+  color: #EEF4ED;
+  font-family: 'Poppins', 'sans-serif';
+  font-size: 1rem;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+}
+
+.experience-time {
+  text-align: right;
+  margin-top: 2.8rem;
+  margin-right: 2rem;
+}
+
+.experience-subtitle, .experience-subheader {
+  margin-top: 1.5rem;
+}
+
+.experience-subheader {
+  color: #EEF4ED;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+}
+
+.dropdown-toggle {
+  color: #EEF4ED;
+  font-size: 1.2rem;
+  padding-top: 0.25rem;
+}
+
+.dropdown-toggle-icon {
+  float: right;
+  margin-left: 1rem;
+  margin-top: 0.2rem;
+}
+
+
+.experience-toggle-list {
+  color: #EEF4ED;
+  font-family: 'Poppins', 'sans-serif';
+  margin-left: 2rem;
+}
+
+.experience-tech {
+  text-align: right;
+  margin-right: 2em;
+}
+
+.experience-tech-card {
+  background-color: #EEF4ED;
+  border-radius: 1rem;
+  width: fit-content;
+  height: 2.5rem;
+  padding: 0.5rem 1rem;
+  color: #134074;
+  text-align: center;
+  float: left;
+  margin-right: 2.16rem;
+}
+
+.experience-tech-name {
+  float: left;
+}
+
+.experience-details {
+  margin-top: 1.5rem;
+}
+
+.experience-detail-name {
+  margin-top: 0.7rem;
 }

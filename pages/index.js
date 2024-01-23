@@ -11,14 +11,17 @@ export default function Home() {
       time: "Expected May 2024",
       program: "Bachelor of Science in Computer Science (GPA 3.55/4.00)",
       courseworks: [
-        {title: 'Data Structures & Algorithms', tech: [{tech: 'Java'}]},
-        {title: 'Operating Systems', tech: [{tech: 'C'}]},
-        {title: 'Algorithms Design & Analysis', tech: []},
-        {title: 'Introduction to AI & Data Science', tech: [{tech: 'Python'}]},
-        {title: 'Computer Networks', tech: [{tech: 'Python'}, {tech: 'Google Cloud Platform'}, {tech: 'Docker'}]},
-        {title: 'Advanced Databases', tech: [{tech: 'PostgreSQL'}, {tech: 'MySQL'}]},
-        {title: 'Parallel Programming', tech: [{tech: 'C'}, {tech: 'C++'}, {tech: 'CUDA'}]},
-        {title: 'Distributed Systems', tech: [{tech: 'Python'}, {tech: 'Kafka'}]}
+        {title: 'Data Structures & Algorithms', tech: [{tech: 'Java', img: '/logos/java.svg'}]},
+        {title: 'Operating Systems', tech: [{tech: 'C', img: '/logos/c.svg'}]},
+        {title: 'Introduction to AI & Data Science', tech: [{tech: 'Python', img: '/logos/python.svg'}]},
+        {title: 'Computer Networks', tech: [{tech: 'Python', img: '/logos/python.svg'}, 
+                                            {tech: 'GCP', img: '/logos/gcp.svg'}, 
+                                            {tech: 'Docker', img: '/logos/docker.svg'}]},
+        {title: 'Advanced Databases', tech: [{tech: 'PostgreSQL', img: '/logos/postgresql.svg'}, 
+                                             {tech: 'MySQL', img: '/logos/mysql.svg'}]},
+        {title: 'Parallel Programming', tech: [{tech: 'C', img: '/logos/c.svg'}, {tech: 'C++', img: '/logos/cpp.svg'}, 
+                                               {tech: 'CUDA', img: '/logos/cuda.svg'}]},
+        {title: 'Distributed Systems', tech: [{tech: 'Python', img: '/logos/python.svg'}, {tech: 'Kafka', img: '/logos/kafka.svg'}]}
       ]
     },
     {
@@ -27,8 +30,8 @@ export default function Home() {
       program: "Study Abroad Math Program",
       courseworks: [
         {title: 'Introductory Astrophysics', tech: []},
-        {title: 'Computational Probability and Statistics with R', tech: [{tech: 'R'}]},
-        {title: 'Problem Solving with Python', tech: [{tech: 'Python'}]},
+        {title: 'Computational Probability and Statistics with R', tech: [{tech: 'R', img: 'logos/r.svg'}]},
+        {title: 'Problem Solving with Python', tech: [{tech: 'Python', img: 'logos/python.svg'}]},
         {title: 'Interconnected World: Foundations of Human and Development Geographies', tech: []},
         {title: 'Order and Disorder: The Shaping of the 21st Century', tech: []}
       ]
@@ -49,7 +52,7 @@ export default function Home() {
             "Graded and gave feedbacks on assignments related to advanced programming concepts."
           ],
           tech: [
-            {tech: 'JavaScript'}, {tech: 'Java'}, {tech: 'Spring Boot'}, {tech: 'Google Cloud Platform'}, {tech: 'Next.js'}
+            {tech: 'JavaScript'}, {tech: 'Java'}, {tech: 'Spring Boot'}, {tech: 'GCP'}, {tech: 'Next.js'}
           ]
         },
         {
@@ -215,7 +218,7 @@ export default function Home() {
       contents: [
         {tech: "React.js"}, {tech: "Next.js"}, {tech: "Gatsby"}, {tech: "Contentful"}, {tech: "Strapi"}, {tech: "Django"}, 
         {tech: "Spring Boot"}, {tech: "jQuery"}, {tech: "Bootstrap"}, {tech: "Tailwind CSS"}, {tech: "Node.js"}, {tech: "Docker"},
-        {tech: "Google Cloud Platform"}, {tech: "CUDA"}, {tech: "Kafka"}
+        {tech: "GCP"}, {tech: "CUDA"}, {tech: "Kafka"}
       ]
     }
   ]};
