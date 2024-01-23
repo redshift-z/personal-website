@@ -29,7 +29,7 @@ export default function Display ({ display }) {
                     {detailToggle[index] ? 
                         <ul className="education-toggle-list">{education.courseworks.map((coursework) => <li><div className="sm:grid sm:grid-cols-2 experience-details">
                             <p className="education-detail-name experience-detail-name">{coursework.title}</p>
-                            <div className="experience-tech grid grid-cols-1 sm:grid-cols-3 gap-y-6">{coursework.tech.map((tech) => <div className="grid grid-cols-5 experience-tech-card education-tech-card">
+                            <div className="experience-tech grid grid-cols-1 xl:grid-cols-3 gap-y-6">{coursework.tech.map((tech) => <div className="grid grid-cols-5 experience-tech-card education-tech-card">
                             <img className="experience-tech-icon" src={tech.img} width={24} height={24} alt="Logo" />
                             <div className="col-span-4 experience-tech-name">{tech.tech}</div></div>)}
                         </div>

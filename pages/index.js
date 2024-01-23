@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Header from '@components/Header'
 import { BsLinkedin, BsGithub, BsInstagram, BsMedium, BsEnvelopeAt} from "react-icons/bs";
+import { FaChevronUp } from "react-icons/fa";
+
 import Display from '@components/Display';
 export default function Home() {
   const education = { type: "education", contents: [
@@ -241,6 +243,13 @@ export default function Home() {
     }
   ]};
 
+  const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
+
+  function scrollToTop() {
+    if (!isBrowser()) return;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   const [experienceDisplay, setExperienceDisplay] = useState({display: education, educationButton: "experience-toggle-on",
                                                     experienceButton: "experience-toggle-off", projectButton: "experience-toggle-off",
                                                     skillButton: "experience-toggle-off"});
@@ -322,6 +331,9 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <button className={"btn-scroll-top"} onClick={scrollToTop}>
+            <FaChevronUp />
+      </button>
     </div>
   )
 }
