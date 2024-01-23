@@ -215,8 +215,7 @@ b {
   padding: 0.5rem 1rem;
   color: #134074;
   text-align: center;
-  float: left;
-  margin-right: 2.16rem;
+  margin-right: 2.2rem;
 }
 
 .experience-tech-name {
@@ -232,4 +231,9 @@ b {
   color: #EEF4ED;
   font-family: 'Poppins', 'sans-serif';
   text-align: justify;
+}
+
+.skill-container {
+  margin-left: 2rem;
+  margin-top: 2rem;
 }

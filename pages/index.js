@@ -213,22 +213,27 @@ export default function Home() {
     {
       category: "Languages",
       contents: [
-        {tech: "C"}, {tech: "C++"}, {tech: "Python"}, {tech: "SQL"}, {tech: "Java"}, {tech: "JavaScript"}, {tech: "Matlab"},
-        {tech: "HTML"}, {tech: "TypeScript"}, {tech: "R"}, {tech: "GraphQL"}
+        {tech: "C", img: 'logos/c.svg'}, {tech: "C++", img: 'logos/cpp.svg'}, {tech: "Python", img: 'logos/python.svg'}, 
+        {tech: "SQL", img: 'logos/sql.svg'}, {tech: "Java", img: 'logos/java.svg'}, {tech: "JavaScript", img: 'logos/javascript.svg'}, 
+        {tech: "Matlab", img: 'logos/matlab.png'}, {tech: "HTML", img:'logos/html.svg'}, {tech: "TypeScript", img: 'logos/typescript.svg'}, 
+        {tech: "R", img: 'logos/r.svg'}, {tech: "GraphQL", img: 'logos/graphql.svg'}
       ]
     },
     {
       category: "Operating Systems",
       contents: [
-        {tech: "Windows"}, {tech: "Ubuntu"}, {tech: "Debian"}
+        {tech: "Windows", img: 'logos/windows.svg'}, {tech: "Ubuntu", img:'logos/ubuntu.svg'}, {tech: "Debian", img:'logos/debian.svg'}
       ]
     },
     {
       category: "Technologies",
       contents: [
-        {tech: "React.js"}, {tech: "Next.js"}, {tech: "Gatsby"}, {tech: "Contentful"}, {tech: "Strapi"}, {tech: "Django"}, 
-        {tech: "Spring Boot"}, {tech: "jQuery"}, {tech: "Bootstrap"}, {tech: "Tailwind CSS"}, {tech: "Node.js"}, {tech: "Docker"},
-        {tech: "GCP"}, {tech: "CUDA"}, {tech: "Kafka"}
+        {tech: "React.js", img: 'logos/react.svg'}, {tech: "Next.js", img: 'logos/next.svg'}, {tech: "Gatsby", img: 'logos/gatsby.svg'}, 
+        {tech: "Contentful", img: 'logos/contentful.svg'}, {tech: "Strapi", img: 'logos/strapi.svg'}, 
+        {tech: "Django", img: 'logos/django.svg'}, {tech: "Spring Boot", img: 'logos/springboot.svg'}, {tech: "jQuery", img: 'logos/jquery.svg'}, 
+        {tech: "Bootstrap", img:'logos/bootstrap.svg'}, {tech: "Tailwind CSS", img: 'logos/tailwindcss.svg'}, 
+        {tech: "Node.js", img: 'logos/node.png'}, {tech: "Docker", img: 'logos/docker.svg'}, {tech: "GCP", img: 'logos/gcp.svg'}, 
+        {tech: "CUDA", img: 'logos/cuda.svg'}, {tech: "Kafka", img: 'logos/kafka.svg'}
       ]
     }
   ]};

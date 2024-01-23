@@ -29,7 +29,7 @@ export default function Display ({ display }) {
                     {detailToggle[index] ? 
                         <ul className="experience-toggle-list">{education.courseworks.map((coursework) => <li><div className="grid grid-cols-2 experience-details">
                             <p className="experience-detail-name">{coursework.title}</p>
-                            <div className="experience-tech">{coursework.tech.map((tech) => <div className="grid grid-cols-5 experience-tech-card">
+                            <div className="experience-tech grid grid-cols-3 gap-y-6">{coursework.tech.map((tech) => <div className="grid grid-cols-5 experience-tech-card">
                             <img src={tech.img} width={24} height={24} alt="Logo" />
                             <div className="col-span-4 experience-tech-name">{tech.tech}</div></div>)}
                         </div>
@@ -62,7 +62,7 @@ export default function Display ({ display }) {
                             : <div></div>
                         }
                     </div>
-                    <div className="experience-tech-container grid grid-cols-6">{experience.tech.map((tech) => <div className="grid grid-cols-5 experience-tech-card">
+                    <div className="experience-tech-container grid grid-cols-6 gap-y-4">{experience.tech.map((tech) => <div className="grid grid-cols-5 experience-tech-card">
                             <img src={tech.img} width={24} height={24} alt="Logo" />
                             <div className="col-span-4 experience-tech-name">{tech.tech}</div>
                         </div>)}
@@ -91,7 +91,7 @@ export default function Display ({ display }) {
                         : <div></div>
                     }
                 </div>
-                <div className="experience-tech-container grid grid-cols-6">{project.tech.map((tech) => <div className="grid grid-cols-5 experience-tech-card">
+                <div className="experience-tech-container grid grid-cols-6 gap-y-4">{project.tech.map((tech) => <div className="grid grid-cols-5 experience-tech-card">
                         <img src={tech.img} width={24} height={24} alt="Logo" />
                         <div className="col-span-4 experience-tech-name">{tech.tech}</div>
                     </div>)}
@@ -103,8 +103,11 @@ export default function Display ({ display }) {
     } else {
         return (<div>
             {display.contents.map((category) => <div>
-                <h2>{category.category}</h2>
-                <div>{category.contents.map((skill) => <div>{skill.tech}</div>)}</div>
+                <h2 className="experience-category">{category.category}</h2>
+                <div className="skill-container grid grid-cols-6 gap-y-4">{category.contents.map((skill) => <div className="grid grid-cols-5 experience-tech-card">
+                        <img src={skill.img} width={24} height={24} alt="Logo" />
+                        <div className="col-span-4 experience-tech-name">{skill.tech}</div>
+                    </div>)}</div>
             </div>)}
         </div>);
     }
