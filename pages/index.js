@@ -1,8 +1,229 @@
+import { useState } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import Header from '@components/Header'
 import { BsLinkedin, BsGithub, BsInstagram, BsMedium, BsEnvelopeAt} from "react-icons/bs";
+import Display from '@components/Display';
 export default function Home() {
+  const education = { type: "education", contents: [
+    {
+      place: "University of Indonesia",
+      time: "Expected May 2024",
+      program: "Bachelor of Science in Computer Science (GPA 3.55/4.00)",
+      courseworks: [
+        {title: 'Data Structures & Algorithms', tech: [{tech: 'Java'}]},
+        {title: 'Operating Systems', tech: [{tech: 'C'}]},
+        {title: 'Algorithms Design & Analysis', tech: []},
+        {title: 'Introduction to AI & Data Science', tech: [{tech: 'Python'}]},
+        {title: 'Computer Networks', tech: [{tech: 'Python'}, {tech: 'Google Cloud Platform'}, {tech: 'Docker'}]},
+        {title: 'Advanced Databases', tech: [{tech: 'PostgreSQL'}, {tech: 'MySQL'}]},
+        {title: 'Parallel Programming', tech: [{tech: 'C'}, {tech: 'C++'}, {tech: 'CUDA'}]},
+        {title: 'Distributed Systems', tech: [{tech: 'Python'}, {tech: 'Kafka'}]}
+      ]
+    },
+    {
+      place: "Newcastle University",
+      time: "September 2023 - January 2024",
+      program: "Study Abroad Math Program",
+      courseworks: [
+        {title: 'Introductory Astrophysics', tech: []},
+        {title: 'Computational Probability and Statistics with R', tech: [{tech: 'R'}]},
+        {title: 'Problem Solving with Python', tech: [{tech: 'Python'}]},
+        {title: 'Interconnected World: Foundations of Human and Development Geographies', tech: []},
+        {title: 'Order and Disorder: The Shaping of the 21st Century', tech: []}
+      ]
+    }
+  ]};
+
+  const experiences = { type: "experiences", contents: [
+    {
+      category: "Computing",
+      contents: [
+        {
+          company: "University of Indonesia",
+          title: "Teaching Assistant of Advanced Programming",
+          time: "January 2023 - June 2023",
+          details: [
+            "Created problem sets on advanced programming concepts such as design patterns, clean code, deployments, concurrency, and microservices.",
+            "Advised 3 student groups on their website projects.",
+            "Graded and gave feedbacks on assignments related to advanced programming concepts."
+          ],
+          tech: [
+            {tech: 'JavaScript'}, {tech: 'Java'}, {tech: 'Spring Boot'}, {tech: 'Google Cloud Platform'}, {tech: 'Next.js'}
+          ]
+        },
+        {
+          company: "Alumni Association for Indonesian National Astronomy Olympiad Team (TOASTI)",
+          title: "Web Development Lead",
+          time: "January 2022 - January 2023",
+          details: [
+            "Initiated the organization's website project.",
+            "Led the decision making process for the technological stack choice.",
+            "Conducted interviews for UX research and designed the UI of the website.",
+            "Built and managed the project's CI/CD pipeline using GitHub Actions.",
+            "Developed an astronomical event calendar that allows users to get reminders through Google Calendar's API."
+          ],
+          tech: [
+            {tech: 'JavaScript'}, {tech: 'React.js'}, {tech: 'Gatsby'}, {tech: 'Strapi'}, {tech: 'Firebase'}, {tech: 'GraphQL'}
+          ]
+        },
+        {
+          company: "University of Indonesia",
+          title: "Teaching Assistant of Statistics & Probability",
+          time: "February 2022 - June 2022",
+          details: [
+            "Graded and gave feedbacks on statistics and probability assignments."
+          ],
+          tech: []
+        }
+      ]
+    },
+    {
+      category: "Astronomy/Astrophysics",
+      contents: [
+        {
+          company: "Freelance",
+          title: "Astronomy/Astrophysics Tutor",
+          time: "September 2019 - September 2022",
+          details: [
+            "Taught astronomy/astrophysics to high school students who are preparing for competitions at various levels (from regional to international).",
+            "Written original problem sets on astronomy/astrophysics.",
+            "Helped 20+ students achieve awards in national/international competitions."
+          ],
+          tech: []
+        },
+        {
+          company: "Bersains",
+          title: "Astronomy Content Creator",
+          time: "August 2020 - July 2021",
+          details: [
+            "Written introductory course materials on mathematics, physics, celestial coordinate systems, and celestial mechanics.",
+            "Written introductory problem sets on astronomy/astrophysics."
+          ],
+          tech: []
+        },
+        {
+          company: "Edufia",
+          title: "Astronomy Instructor",
+          time: "May 2020 - May 2021",
+          details: [
+            "Written introductory course materials on astronomical time systems, galactic/extragalactic astrophysics, and cosmology.",
+            "Written problem sets & solutions on introductory astronomy/astrophysics.",
+            "Held astronomy/astrophysics tutoring session for high school students that are preparing for competitions."
+          ],
+          tech: []
+        }
+      ]
+    },
+    {
+      category: "Others",
+      contents: [
+        {
+          company: "Indonesian International Student Mobility Awards (IISMA)",
+          title: "Student Representative",
+          time: "April 2023 - January 2024",
+          details: [
+            "Led a group of IISMA awardees who are studying at Newcastle University.",
+            "Managed & kept track of their departure/arrival preparations (funding requests, visa applications, insurance, university applications, accommodations & flights).",
+            "Organized events to introduce Indonesian culture to Newcastle University students.",
+            "Managed the communications between Newcastle University IISMA awardees and various stakeholders."
+          ],
+          tech: []
+        },
+        {
+          company: "Alumni Association for Indonesian National Astronomy Olympiad Team (TOASTI)",
+          title: "Social Media Coordinator",
+          time: "November 2020 - January 2022",
+          details: [
+            "Managed the Instagram account of TOASTI.",
+            "Grew the Instagram follower base by 30%.",
+            "Created promotional contents for their events.",
+            "Created design systems for their Instagram content."
+          ],
+          tech: [{tech: 'Figma'}, {tech: 'Canva'}, {tech: 'Adobe Photoshop'}]
+        }
+      ]
+    }
+  ]};
+
+  const projects = { type: "projects", contents: [
+    {
+      category: "Ongoing",
+      contents: [
+        {
+          title: "Undergraduate Final Project",
+          details: [
+            "Identifies value redundancies due to the usage of Kokkos functions on the most recent release of LAMMPS (Large-Scale Atomic/Molecular Massively Parallel Simulator using GVProf, a state-of-art GPU profiler.",
+            "Develops solutions for the identified value redundancies.",
+            "Analyzes the effects of the identified value redundancy on the performance of LAMMPS on an NVIDIA GPU cluster."
+          ],
+          tech: [{name: 'C++'}, {tech: 'CUDA'}, {tech: 'Kokkos'}, {tech: 'LAMMPS'}]
+        },
+        {
+          title: "Thriftin",
+          details: [
+            "Designed a questionnaire website for a personal stylist/shopper to help identify their client’s needs and preferences.",
+            "Implements the website design on the specified tech stack.",
+            "Integrates payment service to the website"
+          ],
+          tech: [{tech: 'TypeScript'}, {tech: 'Next.js'}, {tech: 'Netlify'}, {tech: 'Tailwind CSS'}, {tech: 'Contentful'}]
+        }
+      ]
+    },
+    {
+      category: "Past",
+      contents: [
+        {
+          title: "Onion Routing Simulator",
+          details: [
+            "Developed a log-based simulator to help visualize the process of sending web requests and responses through an onion routing scheme."
+          ],
+          tech: [{tech: 'Python'}]
+        },
+        {
+          title: "KapalTech Vessel Maintenance System",
+          details: [
+            "Contributed in the development of a website to monitor ship/vessel health and manage their maintenance processes.",
+            "Created a dashboard to display lists of vessels owned by a company and the health status of all their components.",
+            "Created database models and APIs for the vessels and their component information.",
+            "Achieved 99% test coverage and ensured 0 security hotspots/technical debts for all the modules I contributed in.",
+            "Actively participated in code review processes along with the other team members, reviewing at least one person's work in a week.",
+            "Implemented the Scrum framework and became the team's Scrum master for a development sprint."
+          ],
+          tech: [{tech: 'Python'}, {tech: 'Django'}, {tech: 'JavaScript'}, {tech: 'React.js'}, {tech: 'Jest'}, {tech: 'SonarQube'}]
+        }
+      ]
+    }
+  ]};
+
+  const skills = {type: "skills", contents: [
+    {
+      category: "Languages",
+      contents: [
+        {tech: "C"}, {tech: "C++"}, {tech: "Python"}, {tech: "SQL"}, {tech: "Java"}, {tech: "JavaScript"}, {tech: "Matlab"},
+        {tech: "HTML"}, {tech: "TypeScript"}, {tech: "R"}, {tech: "GraphQL"}
+      ]
+    },
+    {
+      category: "Operating Systems",
+      contents: [
+        {tech: "Windows"}, {tech: "Ubuntu"}, {tech: "Debian"}
+      ]
+    },
+    {
+      category: "Technologies",
+      contents: [
+        {tech: "React.js"}, {tech: "Next.js"}, {tech: "Gatsby"}, {tech: "Contentful"}, {tech: "Strapi"}, {tech: "Django"}, 
+        {tech: "Spring Boot"}, {tech: "jQuery"}, {tech: "Bootstrap"}, {tech: "Tailwind CSS"}, {tech: "Node.js"}, {tech: "Docker"},
+        {tech: "Google Cloud Platform"}, {tech: "CUDA"}, {tech: "Kafka"}
+      ]
+    }
+  ]};
+
+  const [experienceDisplay, setExperienceDisplay] = useState({display: education, educationButton: "experience-toggle-on",
+                                                    experienceButton: "experience-toggle-off", projectButton: "experience-toggle-off",
+                                                    skillButton: "experience-toggle-off"});
+
   return (
     <div className="container">
       <Head>
@@ -59,10 +280,21 @@ export default function Home() {
           </div>
           <div className='experience-container'>
             <div className='grid grid-cols-4 gap-20 experience-toggle-container'>
-              <button className='experience-toggle-off'>Education</button>
-              <button className='experience-toggle-off'>Experiences</button>
-              <button className='experience-toggle-off'>Projects</button>
-              <button className='experience-toggle-off'>Skills</button>
+              <button className={experienceDisplay.educationButton} onClick={() => setExperienceDisplay({display: education, 
+                                          educationButton: "experience-toggle-on", experienceButton: "experience-toggle-off", 
+                                          projectButton: "experience-toggle-off",skillButton: "experience-toggle-off"})}>Education</button>
+              <button className={experienceDisplay.experienceButton} onClick={() => setExperienceDisplay({display: experiences, 
+                                          educationButton: "experience-toggle-off", experienceButton: "experience-toggle-on", 
+                                          projectButton: "experience-toggle-off", skillButton: "experience-toggle-off"})}>Experiences</button>
+              <button className={experienceDisplay.projectButton} onClick={() => setExperienceDisplay({display: projects, 
+                                          educationButton: "experience-toggle-off", experienceButton: "experience-toggle-off", 
+                                          projectButton: "experience-toggle-on", skillButton: "experience-toggle-off"})}>Projects</button>
+              <button className={experienceDisplay.skillButton} onClick={() => setExperienceDisplay({display: skills, 
+                                          educationButton: "experience-toggle-off", experienceButton: "experience-toggle-off", 
+                                          projectButton: "experience-toggle-off", skillButton: "experience-toggle-on"})}>Skills</button>
+            </div>
+            <div>
+              <Display display={experienceDisplay.display}></Display>
             </div>
           </div>
         </div>
