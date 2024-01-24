@@ -58,6 +58,30 @@ b {
     padding: 0.5rem 0;
     border-radius: 1rem;
   }
+
+  .education-detail-name, .experience-category, .experience-title, .experience-time, .experience-subtitle, .experience-subheader {
+    text-align: center !important;
+  }
+
+  .education-detail-name {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .experience-tech {
+    margin-right: 0 !important;
+  }
+
+  .experience-tech-card {
+    margin-left: 0 !important;
+  }
+
+  .experience-title, .experience-subtitle, .experience-subheader, .experience-tech-container {
+    margin-left: 0 !important;
+  }
+
+  .experience-time {
+    margin-top: 1.4rem !important;
+  }
 }
 
 @media screen and (max-width: 430px) {
@@ -77,12 +101,21 @@ b {
   }
 
   .intro-pic {
-    margin-left: 15vw;
+    height: 0;
+    width: 0;
   }
 
   .experiences-title, .btn-primary, .btn-other-action {
     margin-left: 10vw;
-    
+  }
+
+  .experiences-title {
+    font-size: 2rem !important;
+    width: 92vw;
+  }
+
+  .btn-primary {
+    font-size: 1.5rem !important;
   }
 
   .title {
@@ -94,6 +127,7 @@ b {
 
   .experience-container {
     margin-left: 10vw;
+    min-width: 100vw;
   }
 
   .experience-toggle-container {
@@ -113,6 +147,13 @@ b {
 
   .experience-tech-card {
     min-width: fit-content !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .experience-tech-icon {
+    margin-right: 0px !important;
   }
 
   .education-detail-name {
@@ -122,7 +163,28 @@ b {
 
   .education-tech-card {
     margin-right: 0 !important;
-    margin-left: 2.2rem !important;
+  }
+
+  .experience-tech-container {
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
+  }
+
+  .experience-tech-name {
+    font-family: 'Poppins', sans-serif;
+    display: none;
+  }
+
+  .skill-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .copyright {
+    margin-left: 12vw;
   }
 }
 
@@ -324,9 +386,9 @@ b {
   padding: 0.5rem 1rem;
   color: #134074;
   text-align: center;
-  margin-right: 2.2rem;
   display: flex;
   align-items: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .experience-tech-icon {
@@ -351,6 +413,7 @@ b {
 .skill-container {
   margin-left: 2rem;
   margin-top: 2rem;
+  margin-right: 2rem;
 }
 
 .experience-bullet-list {
