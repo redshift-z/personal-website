@@ -338,7 +338,7 @@ export default function Home() {
           <div className='container grid grid-cols-4'>
             <h1 className='experiences-title col-span-3'>curious about what I do?</h1>
             <div>
-              <a href="https://drive.google.com/file/d/1dYtdOyuPCsKXmimWfAfHjcyspoqs2rS9/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1LuQ2dMXV5CSeh8GNIiJcZl_lFEXMi5qm/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <button className='btn-primary'>Download CV</button>
               </a>
               <p className="btn-other-action">or scroll below</p>
