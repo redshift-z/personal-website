@@ -11,20 +11,16 @@ export default function Home() {
   const education = { type: "education", contents: [
     {
       place: "University of Indonesia",
-      time: "Expected May 2024",
-      program: "Bachelor of Science in Computer Science (GPA 3.55/4.00)",
+      time: "Expected 2025",
+      program: "Bachelor of Science in Computer Science (GPA 3.52/4.00)",
       courseworks: [
         {title: 'Data Structures & Algorithms', tech: [{tech: 'Java', img: '/logos/java.svg', url:'https://www.java.com/'}]},
-        {title: 'Operating Systems', tech: [{tech: 'C', img: '/logos/c.svg', url: 'https://www.open-std.org/jtc1/sc22/wg14/'}]},
         {title: 'Introduction to AI & Data Science', tech: [{tech: 'Python', img: '/logos/python.svg', url: 'https://www.python.org/'}]},
         {title: 'Computer Networks', tech: [{tech: 'Python', img: '/logos/python.svg', url: 'https://www.python.org/'}, 
                                             {tech: 'Google Cloud Platform', img: '/logos/gcp.svg', url: 'https://cloud.google.com/'}, 
                                             {tech: 'Docker', img: '/logos/docker.svg', url: 'https://www.docker.com/'}]},
         {title: 'Advanced Databases', tech: [{tech: 'PostgreSQL', img: '/logos/postgresql.svg', url: 'https://www.postgresql.org/'}, 
                                              {tech: 'MySQL', img: '/logos/mysql.svg', url: 'https://www.mysql.com/'}]},
-        {title: 'Parallel Programming', tech: [{tech: 'C', img: '/logos/c.svg', url: 'https://www.open-std.org/jtc1/sc22/wg14/'}, 
-                                               {tech: 'C++', img: '/logos/cpp.svg', url: 'https://isocpp.org/'}, 
-                                               {tech: 'CUDA', img: '/logos/cuda.svg', url: 'https://developer.nvidia.com/cuda-zone'}]},
         {title: 'Distributed Systems', tech: [{tech: 'Python', img: '/logos/python.svg', url: 'https://www.python.org/'}, 
                                               {tech: 'Kafka', img: '/logos/kafka.svg', url: 'https://kafka.apache.org/'}]}
       ]
@@ -48,13 +44,64 @@ export default function Home() {
       category: "Computing",
       contents: [
         {
+          company: "SwipeRx",
+          roles: [
+            {
+              title: "Associate Full Stack Developer",
+              time: "Aug 2024 - current",
+              details: [
+                "Created new APIs for warehouse management system integration with NetSuite.",
+                "Utilized Google Pub/Sub for integrations with both internal and third party systems.",
+                "Assisted the development and production support of a customer loyalty program.",
+                "Managed deployments on the Azure DevOps platform.",
+                "Led Scrum events such as daily stand-up meetings, code reviews, sprint plannings and retrospectives.",
+              ],
+            },
+            {
+              title: "Full Stack Developer Intern",
+              time: "May 2024 - Aug 2024",
+              details: [
+                "Collaborated in a team of 5 to develop a warehouse management system.",
+                "Spotted potential technical debts and contributed in refactoring / restructuring the existing codebase.",
+                "Written unit tests.",
+                "Followed the Agile / Scrum framework by actively participating in daily stand-up meetings, code reviews, sprint plannings, reviews, and retrospectives.",
+              ],
+            }
+          ],
+          tech: [
+            {tech: 'TypeScript', img: 'logos/typescript.svg', url: 'https://www.typescriptlang.org/'}, 
+            {tech: 'React.js', img: 'logos/react.svg', url:'https://react.dev/'}, 
+            {tech: 'NestJS', img: 'logos/nestjs.svg', url: 'https://nestjs.com/'}, 
+            {tech: 'MongoDB', img: 'logos/mongodb.svg', url: 'https://www.mongodb.com/'}, 
+            {tech: 'Material UI', img: 'logos/mui.svg', url:'https://mui.com/'},
+            {tech: 'Redux', img: 'logos/redux.svg', url: 'https://redux.js.org/'}, 
+            {tech: 'Jest', img: 'logos/jest.svg', url: 'https://jestjs.io/'}, 
+            {tech: 'Jira', img: 'logos/jira.svg', url:'https://www.atlassian.com/software/jira'},
+            {tech: 'MySQL', img: 'logos/mysql.svg', url:'https://www.mysql.com/'},
+            {tech: 'NetSuite', img: 'logos/netsuite.svg', url: 'https://www.netsuite.com/portal/products/erp.shtml'}, 
+            {tech: 'Google Cloud Platform', img: 'logos/gcp.svg', url: 'https://cloud.google.com/'}, 
+          ]
+        },
+        {
           company: "University of Indonesia",
-          title: "Teaching Assistant of Advanced Programming",
-          time: "Jan 2023 - Jun 2023",
-          details: [
-            "Created problem sets on advanced programming concepts such as design patterns, clean code, deployments, concurrency, and microservices.",
-            "Advised 3 student groups on their website projects.",
-            "Graded and gave feedbacks on assignments related to advanced programming concepts."
+          roles: [
+            {
+              title: "Teaching Assistant of Advanced Programming",
+              time: "Jan 2023 - Jun 2023",
+              details: [
+                "Created problem sets on advanced programming concepts such as design patterns, clean code, deployments, concurrency, and microservices.",
+                "Advised 3 student groups on their website projects.",
+                "Graded and gave feedbacks on assignments related to advanced programming concepts."
+              ],
+            },
+            {
+              title: "Teaching Assistant of Statistics & Probability",
+              time: "Feb 2022 - Jun 2022",
+              details: [
+                "Graded and gave feedbacks on statistics and probability assignments."
+              ],
+              tech: []
+            }
           ],
           tech: [
             {tech: 'JavaScript', img: 'logos/javascript.svg', url: 'https://developer.mozilla.org/en-US/docs/Web/javascript'}, 
@@ -66,14 +113,18 @@ export default function Home() {
         },
         {
           company: "Alumni Association for Indonesian National Astronomy Olympiad Team (TOASTI)",
-          title: "Web Development Lead",
-          time: "Jan 2022 - Jan 2023",
-          details: [
-            "Initiated the organization's website project.",
-            "Led the decision making process for the technological stack choice.",
-            "Conducted interviews for UX research and designed the UI of the website.",
-            "Built and managed the project's CI/CD pipeline using GitHub Actions.",
-            "Developed an astronomical event calendar that allows users to get reminders through Google Calendar's API."
+          roles: [
+            {
+              title: "Web Development Lead",
+              time: "Jan 2022 - Jan 2023",
+              details: [
+                "Initiated the organization's website project.",
+                "Led the decision making process for the technological stack choice.",
+                "Conducted interviews for UX research and designed the UI of the website.",
+                "Built and managed the project's CI/CD pipeline using GitHub Actions.",
+                "Developed an astronomical event calendar that allows users to get reminders through Google Calendar's API."
+              ],
+            }
           ],
           tech: [
             {tech: 'JavaScript', img: 'logos/javascript.svg', url: 'https://developer.mozilla.org/en-US/docs/Web/javascript'}, 
@@ -84,15 +135,6 @@ export default function Home() {
             {tech: 'GraphQL', img: 'logos/graphql.svg', url: 'https://graphql.org/'}
           ]
         },
-        {
-          company: "University of Indonesia",
-          title: "Teaching Assistant of Statistics & Probability",
-          time: "Feb 2022 - Jun 2022",
-          details: [
-            "Graded and gave feedbacks on statistics and probability assignments."
-          ],
-          tech: []
-        }
       ]
     },
     {
@@ -100,33 +142,45 @@ export default function Home() {
       contents: [
         {
           company: "Freelance",
-          title: "Astronomy/Astrophysics Tutor",
-          time: "Sep 2019 - Sep 2022",
-          details: [
-            "Taught astronomy / astrophysics to high school students who are preparing for competitions at various levels (from regional to international).",
-            "Written original problem sets on astronomy / astrophysics.",
-            "Helped 20+ students achieve awards in national / international competitions."
+          roles: [
+            {
+              title: "Astronomy/Astrophysics Tutor",
+              time: "Sep 2019 - Sep 2022",
+              details: [
+                "Taught astronomy / astrophysics to high school students who are preparing for competitions at various levels (from regional to international).",
+                "Written original problem sets on astronomy / astrophysics.",
+                "Helped 20+ students achieve awards in national / international competitions."
+              ],
+            }
           ],
           tech: []
         },
         {
           company: "Bersains",
-          title: "Astronomy Content Creator",
-          time: "Aug 2020 - Jul 2021",
-          details: [
-            "Written introductory course materials on mathematics, physics, celestial coordinate systems, and celestial mechanics.",
-            "Written introductory problem sets on astronomy / astrophysics."
+          roles: [
+            {
+              title: "Astronomy Content Creator",
+              time: "Aug 2020 - Jul 2021",
+              details: [
+                "Written introductory course materials on mathematics, physics, celestial coordinate systems, and celestial mechanics.",
+                "Written introductory problem sets on astronomy / astrophysics."
+              ],
+            }
           ],
           tech: []
         },
         {
           company: "Edufia",
-          title: "Astronomy Instructor",
-          time: "May 2020 - May 2021",
-          details: [
-            "Written introductory course materials on astronomical time systems, galactic / extragalactic astrophysics, and cosmology.",
-            "Written problem sets & solutions on introductory astronomy / astrophysics.",
-            "Held astronomy/astrophysics tutoring session for high school students that are preparing for competitions."
+          roles: [
+            {
+              title: "Astronomy Instructor",
+              time: "May 2020 - May 2021",
+              details: [
+                "Written introductory course materials on astronomical time systems, galactic / extragalactic astrophysics, and cosmology.",
+                "Written problem sets & solutions on introductory astronomy / astrophysics.",
+                "Held astronomy/astrophysics tutoring session for high school students that are preparing for competitions."
+              ],
+            }
           ],
           tech: []
         }
@@ -137,66 +191,45 @@ export default function Home() {
       contents: [
         {
           company: "Indonesian International Student Mobility Awards (IISMA)",
-          title: "Student Representative",
-          time: "Apr 2023 - Jan 2024",
-          details: [
-            "Led a group of IISMA awardees who are studying at Newcastle University.",
-            "Managed & kept track of their departure / arrival preparations (funding requests, visa applications, insurance, university applications, accommodations & flights).",
-            "Organized events to introduce Indonesian culture to Newcastle University students.",
-            "Managed the communications between Newcastle University IISMA awardees and various stakeholders."
+          roles: [
+            {
+              title: "Student Representative",
+              time: "Apr 2023 - Jan 2024",
+              details: [
+                "Led a group of IISMA awardees who are studying at Newcastle University.",
+                "Managed & kept track of their departure / arrival preparations (funding requests, visa applications, insurance, university applications, accommodations & flights).",
+                "Organized events to introduce Indonesian culture to Newcastle University students.",
+                "Managed the communications between Newcastle University IISMA awardees and various stakeholders."
+              ],
+            }
           ],
           tech: []
         },
         {
           company: "Alumni Association for Indonesian National Astronomy Olympiad Team (TOASTI)",
-          title: "Social Media Coordinator",
-          time: "Nov 2020 - Jan 2022",
-          details: [
-            "Managed the Instagram account of TOASTI.",
-            "Grew the Instagram follower base by 30%.",
-            "Created promotional contents for their events.",
-            "Created design systems for their Instagram content."
+          roles: [
+            {
+              title: "Social Media Coordinator",
+              time: "Nov 2020 - Jan 2022",
+              details: [
+                "Managed the Instagram account of TOASTI.",
+                "Grew the Instagram follower base by 30%.",
+                "Created promotional contents for their events.",
+                "Created design systems for their Instagram content."
+              ],
+            }
           ],
-          tech: [{tech: 'Figma', img: 'logos/figma.svg', url: 'https://www.figma.com/'}, 
-                 {tech: 'Canva', img: 'logos/canva.svg', url: 'https://www.canva.com/'}, 
-                 {tech: 'Photoshop', img: 'logos/photoshop.svg', url: 'https://www.adobe.com/products/photoshop.html'}]
+          tech: [
+            {tech: 'Figma', img: 'logos/figma.svg', url: 'https://www.figma.com/'}, 
+            {tech: 'Canva', img: 'logos/canva.svg', url: 'https://www.canva.com/'}, 
+            {tech: 'Photoshop', img: 'logos/photoshop.svg', url: 'https://www.adobe.com/products/photoshop.html'}
+          ]
         }
       ]
     }
   ]};
 
   const projects = { type: "projects", contents: [
-    {
-      category: "Ongoing",
-      contents: [
-        {
-          title: "Undergraduate Final Project",
-          details: [
-            "Identifies value redundancies due to the usage of Kokkos functions on the most recent release of LAMMPS (Large-Scale Atomic / Molecular Massively Parallel Simulator) using GVProf, a state-of-art GPU profiler.",
-            "Develops solutions for the identified value redundancies.",
-            "Analyzes the effects of the identified value redundancy on the performance of LAMMPS on an NVIDIA GPU cluster."
-          ],
-          tech: [{tech: 'C++', img: 'logos/cpp.svg', url: 'https://isocpp.org/'}, 
-                 {tech: 'CUDA', img: 'logos/cuda.svg', url: 'https://developer.nvidia.com/cuda-zone'}, 
-                 {tech: 'Kokkos', img: 'logos/kokkos.png', url: 'https://kokkos.org/'}, 
-                 {tech: 'LAMMPS', img: 'logos/lammps.svg', url: 'https://www.lammps.org/'}]
-        },
-        {
-          title: "Thriftin",
-          url: "https://thriftin.netlify.com",
-          details: [
-            "Designed a questionnaire website for a personal stylist / shopper to help identify their client’s needs and preferences.",
-            "Implements the website design on the specified tech stack.",
-            "Integrates payment service to the website"
-          ],
-          tech: [{tech: 'TypeScript', img: 'logos/typescript.svg', url: 'https://www.typescriptlang.org/'}, 
-                 {tech: 'Next.js', img: 'logos/next.svg', url:'https://nextjs.org/'}, 
-                 {tech: 'Netlify', img: '/logo-netlify.svg', url: 'https://www.netlify.com/'}, 
-                 {tech: 'Tailwind CSS', img: 'logos/tailwindcss.svg', url: 'https://tailwindcss.com/'}, 
-                 {tech: 'Contentful', img: 'logos/contentful.svg', url: 'https://www.contentful.com/'}]
-        }
-      ]
-    },
     {
       category: "Past",
       contents: [
@@ -234,8 +267,6 @@ export default function Home() {
     {
       category: "Languages",
       contents: [
-        {tech: "C", img: 'logos/c.svg', url: 'https://www.open-std.org/jtc1/sc22/wg14/'}, 
-        {tech: "C++", img: 'logos/cpp.svg', url: 'https://isocpp.org/'}, 
         {tech: "Python", img: 'logos/python.svg', url: 'https://www.python.org/'}, 
         {tech: "SQL", img: 'logos/sql.svg', url: 'https://en.wikipedia.org/wiki/SQL'}, 
         {tech: "Java", img: 'logos/java.svg', url:'https://www.java.com/'}, 
@@ -261,7 +292,6 @@ export default function Home() {
         {tech: "React.js", img: 'logos/react.svg', url: 'https://react.dev/'}, 
         {tech: "Next.js", img: 'logos/next.svg', url:'https://nextjs.org/'}, 
         {tech: "Gatsby", img: 'logos/gatsby.svg', url: 'https://www.gatsbyjs.com/'}, 
-        {tech: "Contentful", img: 'logos/contentful.svg', url: 'https://www.contentful.com/'}, 
         {tech: "Strapi", img: 'logos/strapi.svg', url: 'https://strapi.io/'}, 
         {tech: "Django", img: 'logos/django.svg', url: 'https://www.djangoproject.com/'}, 
         {tech: "Spring Boot", img: 'logos/springboot.svg', url: 'https://spring.io/projects/spring-boot/'}, 
@@ -271,8 +301,14 @@ export default function Home() {
         {tech: "Node.js", img: 'logos/node.png', url: 'https://nodejs.org/'}, 
         {tech: "Docker", img: 'logos/docker.svg', url: 'https://www.docker.com/'}, 
         {tech: "Google Cloud Platform", img: 'logos/gcp.svg', url: 'https://cloud.google.com/'}, 
-        {tech: "CUDA", img: 'logos/cuda.svg', url: 'https://developer.nvidia.com/cuda-zone'}, 
-        {tech: "Kafka", img: 'logos/kafka.svg', url: 'https://kafka.apache.org/'}
+        {tech: "Kafka", img: 'logos/kafka.svg', url: 'https://kafka.apache.org/'},
+        {tech: 'NestJS', img: 'logos/nestjs.svg', url: 'https://nestjs.com/'}, 
+        {tech: 'MongoDB', img: 'logos/mongodb.svg', url: 'https://www.mongodb.com/'}, 
+        {tech: 'Material UI', img: 'logos/mui.svg', url:'https://mui.com/'},
+        {tech: 'Redux', img: 'logos/redux.svg', url: 'https://redux.js.org/'}, 
+        {tech: 'Jest', img: 'logos/jest.svg', url: 'https://jestjs.io/'}, 
+        {tech: 'Jira', img: 'logos/jira.svg', url:'https://www.atlassian.com/software/jira'},
+        {tech: 'NetSuite', img: 'logos/netsuite.svg', url: 'https://www.netsuite.com/portal/products/erp.shtml'}, 
       ]
     }
   ]};
@@ -307,13 +343,11 @@ export default function Home() {
           <Header title="hey!"/>
           <p className="description">
             I'm <b>Razita Nuriyan</b>, but please do call me <b>Zita</b>!! Currently, I'm a Jakarta-based final year <b>Computer 
-            Science </b> student at the University of Indonesia, having just recently came back from a semester at the Newcastle 
+            Science </b> student at the University of Indonesia, who has also studied for a semester at the Newcastle 
             University under the IISMA (Indonesian International Student Mobility Awards) 2023 scheme. During my study, I've had 
-            the chance to explore a broad range of subjects related to computing, but my experiences focused on <b>Web Development</b>, 
-            <b> Computational Statistics</b>, and <b>High Performance Computing</b>. I'm currently doing research on a high-performance 
-            molecular dynamics simulator, as I've always been passionate about science for as long as I can remember (I've 
+            the chance to explore a broad range of subjects related to computing, but my experiences focused on <b>Web Development</b>. I've 
             represented Indonesia in an international astrophysics competition in high school and went on to teach <b>astrophysics </b> 
-            for 3 years, helping 20++ students win medals at national and international levels). I can probably still name the stars 
+            for 3 years, helping 20++ students win medals at national and international levels. I can probably still name the stars 
             at the night sky if we go stargazing 🔭.
           </p>
           <div className='flex justify-between icons-container'>
@@ -338,7 +372,7 @@ export default function Home() {
           <div className='container grid grid-cols-4'>
             <h1 className='experiences-title col-span-3'>curious about what I do?</h1>
             <div>
-              <a href="https://drive.google.com/file/d/1LuQ2dMXV5CSeh8GNIiJcZl_lFEXMi5qm/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/12g2Jl0Mv18iZoIUUH-xU5WWuDs8A9kRr/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <button className='btn-primary'>Download CV</button>
               </a>
               <p className="btn-other-action">or scroll below</p>
