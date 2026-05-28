@@ -1,0 +1,32 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="2r6_W-fPv3hgWeporxW0">
+    <mxGraphModel dx="545" dy="897" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fWTqC4ntddx6N_71uxAr-3" parent="1" style="whiteSpace=wrap;html=1;" value="room" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="fWTqC4ntddx6N_71uxAr-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="main idea: how to show that there is no more exit&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;what the fuck is no more exit??? it is the loss of hope &amp;amp; the realization that you’ve seen edges of the world &amp;amp; still see that it is not worth it to try&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;хрищёвка vibe music signifies loss of hope?&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="200" x="30" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="fWTqC4ntddx6N_71uxAr-2" parent="1" style="whiteSpace=wrap;html=1;" value="roadSSSSSS" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="fWTqC4ntddx6N_71uxAr-10" edge="1" parent="1" source="fWTqC4ntddx6N_71uxAr-1" style="edgeStyle=none;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="fWTqC4ntddx6N_71uxAr-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fWTqC4ntddx6N_71uxAr-1" parent="1" style="whiteSpace=wrap;html=1;" value="roof" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="fWTqC4ntddx6N_71uxAr-7" parent="1" style="whiteSpace=wrap;html=1;" value="stars: forget most of those when you used to remember. YOU USED TO THINK THERE WAS NO USE REMEMBERING. there is use in remembering" vertex="1">
+          <mxGeometry height="60" width="290" x="300" y="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
